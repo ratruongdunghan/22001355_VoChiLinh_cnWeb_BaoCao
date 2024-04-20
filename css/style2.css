@@ -1,0 +1,326 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.top {
+
+    background-color: #fff;
+    height: auto;
+    width: 100%;
+    padding: 2%;
+
+}
+
+.icon {
+    display: flex;
+
+}
+
+.search {
+    border-radius: 40px;
+    height: 45px;
+    width: 590px;
+    border: 1px solid black;
+}
+
+.search {
+    position: relative;
+    left: 400px;
+    bottom: 57px;
+}
+
+.divider {
+    margin-left: 20px;
+    width: 2px;
+    height: 24px;
+    background-color: #222;
+    position: relative;
+    bottom: 30px;
+    left: 135px;
+}
+
+
+.functional {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    float: right;
+    position: absolute;
+
+}
+
+.functional {
+    bottom: 87%;
+    left: 60%;
+}
+
+#main-menu ul li {
+    display: flex;
+    display: inline;
+    float: left;
+    list-style: none;
+}
+
+#main-menu ul li a {
+    text-decoration: none;
+    color: #222;
+}
+
+#main-menu {
+    display: flex;
+
+}
+
+
+#main-menu li {
+    position: relative;
+}
+
+#main-menu li a {
+    color: #f8f8f8;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+
+#main-menu ul.sub-menu {
+    
+
+    padding: 15px 0px;
+    width: 200px;
+    display: none;
+}
+
+#main-menu li:hover ul.sub-menu {
+    display: block;
+}
+
+#main-menu ul.sub-menu a {
+
+    padding: 8px 15px;
+    border-bottom: 1px solid #333;
+    width: 200px;
+}
+
+#main-menu ul.sub-menu li:hover>a {
+    border-bottom: 1px solid #696767;
+}
+
+#main-menu ul.sub-menu li:last-child a {
+    border: none;
+}
+
+#main-menu>i>a {
+    position: relative;
+}
+
+#main-menu>li>a::before {
+    content: "";
+    height: 4px;
+    width: 0px;
+    background: #f00;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.25 cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#main-menu>li:hover>a::before {
+    width: 100%;
+}
+
+ul.list-photo li {
+max-width: 545px;
+overflow: hidden;
+}
+
+ul.list-photo li a img {
+    display: block;
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+ul.list-photo li:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+
+
+.center {
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+
+}
+
+.center {
+    display: flex;
+    justify-content: inline;
+}
+
+.center ul li {
+    list-style: none;
+}
+
+.list-photo img {
+    width: 120px;
+    padding: 2%;
+    margin-top: 50%;
+}
+
+#photo1 {
+
+    width: 580px;
+    padding: 2%;
+    position: relative;
+    left: 60px;
+}
+
+.information {
+    position: absolute;
+    height: auto;
+    width: 500px;
+    border-radius: 10px;
+    padding: 2%;
+    right: 0;
+    margin-right: 5%;
+    margin-top: 1%;
+    box-shadow: 10px 10px 100px 0px #333;
+
+}
+
+.price {
+    border-bottom: 1px solid #222;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button1 {
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 40px;
+    width: 200px;
+    background-color: #f00;
+    color: white;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    
+}
+
+.button2 {
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+    color: orangered;
+    justify-content: center;
+    display: flex;
+
+}
+
+
+.properties {
+    height: 400px;
+    width: 100%;
+    padding: 2%;
+
+    margin-top: 13%;
+
+}
+
+.properties {
+    display: flex;
+    justify-content: space-around;
+}
+
+.properties .picture-content {
+    max-width: 545px;
+    overflow: hidden;
+}
+
+.properties .picture-content a img {
+    display: block;
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.properties .picture-content:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+
+
+.line {
+    height: 4px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid orangered;
+    background-color: orangered;
+    position: relative;
+}
+
+.line {
+    left: 210px;
+    bottom: 27px;
+
+}
+
+
+
+
+
+.footer ul li {
+    list-style: none;
+
+}
+
+.footer {
+    height: 400px;
+    width: 100%;
+    background-color: gray;
+   padding: 2%; 
+}
+
+.footer .getsupport {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.footer .getsupport ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer .getsupport ul li a {
+    color: black;
+}
+
+
+.footer .getsupport ul li {
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+.footer .getsupport ul h4 {
+    margin-bottom: 10px; 
+}
+
+.symbol ul li{
+    display: flex;
+    display: inline;
+}
+
+.download {
+    position: relative;
+    left: 800px;
+    bottom: 75px;
+}

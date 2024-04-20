@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xedap.vn | Trang web bán xe | Võ Chí Linh</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/Favicon.png" type="image/x-icon">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../bootstrap-4.6.2-dist/css/bootstrap.min.css"></script>
+    <link rel="stylesheet" href="../bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="../bootstrap-4.6.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="../Javascript/dk.js"></script>
+
+</head>
+
+<body style="margin: 0; padding: 0; width: 100%;>
+
+    <div class= " container">
+
+    <div class="top">
+
+        <div class="icon">
+            <a href="">
+                <img style="width: 50px;" src="../img/Favicon.png" alt="">
+            </a>
+            <span>
+
+                <h1
+                    style=" font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: tomato; margin-left: 2%;">
+                    XEDAPBT
+            </span>
+
+        </div>
+
+
+        <div class="search">
+
+            <div class="dropdown">
+
+                <button style=" margin-left: 1px; border-radius: 40px; " class="btn btn dropdown-toggle" type="button"
+                    data-toggle="dropdown" aria-expanded="false">
+                    Lựa chọn loại xe
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item disabled" href="#">Xe đạp thể thao</a>
+                    <a class="dropdown-item" href="../html/homedetail.html">Xe đạp cho gia đình </a>
+                  
+                </div>
+
+
+                <input style="width: 424px; height: 40px;margin-top: 2px; border-radius: 40px; border: none;"
+                    type="search" name="" id="timkiem" onblur="return TimKiemSanPham()"
+                    placeholder="Tìm kiếm sản phẩm...">
+            </div>
+            <div class="divider"></div>
+
+
+        </div>
+        <div class="functional">
+
+            <div class="option">
+                Giao hàng đến:
+            </div>
+            <div class="flag">
+                <img style="width: 30px;" src="../img/laco.png" alt="">
+                <span style="margin-right: 20px;">Việt Nam</span>
+            </div>
+            <div class="planet">
+                <i style="font-size: 25px; margin-right: 20px;" class="fa fa-globe" aria-hidden="true"></i>
+            </div>
+            <div class="chat">
+                <a href=""><i style="font-size:25px; color: black; margin-right: 20px" class="fa fa-comment"
+                        aria-hidden="true"></i></a>
+            </div>
+            <div class="cart">
+                <a href=""><i style="font-size: 25px; margin-right: 20px;" class="fa fa-shopping-cart"
+                        aria-hidden="true"></i></a>
+            </div>
+            <div class="user">
+                <a href=""><i style="font-size:25px; margin-right: 5px;" class="fa fa-user-o"
+                        aria-hidden="true"></i></a>
+                <span>
+                    <a style="text-decoration: none; color: orangered;" href="DKTK.html">
+                        Đăng nhập
+                    </a>
+
+                </span>
+            </div>
+        </div>
+
+        <div class="sub-header">
+            <ul class="menu">
+                <li><a style="margin-right:20px" href="">
+                        <i class="fa fa-list-ul" aria-hidden="true"></i>
+                        Tất cả danh mục
+                    </a></li>
+                <li><a style="margin-right: 20px;" href="">
+                        Lựa chọn nổi bật
+                    </a></li>
+                <li><a style="margin-right:630px" href="">
+                        Thành viên của BT
+                    </a></li>
+            </ul>
+
+            <ul class="menu">
+                <li><a style="margin-right:20px;" href="">Trung tâm người mua</a></li>
+                <li><a style="margin-right: 20px;" href="">Trung tâm trợ giúp</a></li>
+                <li><a style="margin-right: 20px;" href="">Có thể bạn quan tâm</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="preview">
+
+        <div class="picture">
+            <img style="padding: 2%; margin-left: 13%; width: 350px;" src="../img/xedapdien1.png" alt="">
+            <ul class="detail-picture" style="list-style: none;">
+                <li><a href=""><img style="width: 50px; margin-bottom: 3px;"
+                            src="../img/xedapdien2.png" alt=""></a></li>
+                <li><a href=""><img style="width: 50px; margin-bottom: 3px;"
+                            src="../img/xedapdien3.png" alt=""></a></li>
+                <li><a href=""><img style="width: 50px; margin-bottom: 3px;"
+                            src="../img/xedapdien5.png" alt=""></a></li>
+                <li><a href=""><img style="width: 50px; margin-bottom: 3px;" src="../img/xedapdien4.png" alt=""></a>
+                </li>
+                <li><a href=""><img style="width: 50px; margin-bottom: 3px;" src="../img/xedapdien7.png" alt=""></a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="information">
+            <div class="icon">
+                <p style="font-size:13px; color: white; margin-left: 3%;">Sẵn sàng vận chuyển</p>
+
+
+            </div>
+            <div class="text">
+
+                <h5
+                    style="line-height: 1.4; margin: 0; text-overflow: ellipsis; cursor: pointer; padding: 2%; border-bottom: 1px solid;">
+                    SUNPEED 700C TRITON Trọng Lượng Nhẹ Thiết Kế Chất Lượng Hàng Đầu Xe <br> Đạp 16 Tốc Độ Nhôm Road
+                    Bike
+                </h5>
+            </div>
+
+            <div class="container_button">
+
+
+                <div class="button1">
+                    <a style="color: black;" href="DKTK.html">
+
+                        Trò Chuyện Bây Giờ
+                    </a>
+                </div>
+                <div class="button2" style="position: relative; right: 75%;">
+                    Liên Hệ Với Nhà Cung Cấp
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <p class="recomend-title" style="font-size: 18px; font-weight: 700; padding: 2%;"> Đề nghị cho bạn</p>
+
+    <div class="content">
+
+        <div class="product">
+            <a href="page4detail.html">
+                <img id="describe" src="../img/xedapdien6.png" alt="">
+                <p style="color: black;">
+
+                    Mỹ Kho Coswheel M20 Chất Béo Lốp Điện Thành Phố Xe Đạp Với Phía Trước
+                    Giỏ 48V 1000W Điện Lai Xe Đạp Hàng Hóa Điện Ba Bánh
+                </p>
+            </a>
+            <h6>10,131,000 VNĐ</h6>
+            <div class="button-contact">
+                <a style="color:black; text-decoration: none;" href="">
+
+                    Liên Hệ Với Nhà Cung Cấp
+                    <span><i style="color: blue;" class="fa fa-comments-o" aria-hidden="true"></i></span>
+                </a>
+            </div>
+
+        </div>
+        <div class="product">
+            <a href="homedetail.html">
+                <img id="describe" src="../img/xedapdien2.png" alt="">
+                <p style="color: black;">
+
+                    Mỹ Kho Coswheel M20 Chất Béo Lốp Điện Thành Phố Xe Đạp Với Phía Trước
+                    Giỏ 48V 1000W Điện Lai Xe Đạp Hàng Hóa Điện Ba Bánh
+                </p>
+            </a>
+            <h6>6,131,000 VNĐ</h6>
+            <div class="button-contact">
+                <a style="color:black; text-decoration: none;" href="">
+
+                    Liên Hệ Với Nhà Cung Cấp
+                    <span><i style="color: blue;" class="fa fa-comments-o" aria-hidden="true"></i></span>
+                </a>
+            </div>
+
+        </div>
+        <div class="product">
+            <a href="page5detail.html">
+                <img id="describe" src="../img/xedapdien1.png" alt="">
+                <p style="color: black;">
+
+                    Mỹ Kho Coswheel M20 Chất Béo Lốp Điện Thành Phố Xe Đạp Với Phía Trước
+                    Giỏ 48V 1000W Điện Lai Xe Đạp Hàng Hóa Điện Ba Bánh
+                </p>
+            </a>
+            <h6>24,110,000 VNĐ</h6>
+            <div class="button-contact">
+                <a style="color:black; text-decoration: none;" href="">
+
+                    Liên Hệ Với Nhà Cung Cấp
+                    <span><i style="color: blue;" class="fa fa-comments-o" aria-hidden="true"></i></span>
+                </a>
+            </div>
+
+        </div>
+        <div class="product">
+            <a href="page6detail.html">
+                <img id="describe" src="../img/xedapdien4.png" alt="">
+                <p style="color: black;">
+
+                    Mỹ Kho Coswheel M20 Chất Béo Lốp Điện Thành Phố Xe Đạp Với Phía Trước
+                    Giỏ 48V 1000W Điện Lai Xe Đạp Hàng Hóa Điện Ba Bánh
+                </p>
+            </a>
+            <h6>1,131,000 VNĐ</h6>
+            <div class="button-contact">
+                <a style="color:black; text-decoration: none;" href="">
+
+                    Liên Hệ Với Nhà Cung Cấp
+                    <span><i style="color: blue;" class="fa fa-comments-o" aria-hidden="true"></i></span>
+                </a>
+            </div>
+
+        </div>
+        <br>
+        
+        <div class="product">
+            <a href="page7detail.html">
+                <img id="describe" src="../img/xedapdien5.png" alt="">
+                <p style="color: black;">
+
+                    China factory sunpeed bike Sport Fashion 700C bicycle Carbon Road Bike
+                </p>
+            </a>
+            <h6>1,131,000 VNĐ</h6>
+            <div class="button-contact">
+                <a style="color:black; text-decoration: none;" href="">
+
+                    Liên Hệ Với Nhà Cung Cấp
+                    <span><i style="color: blue;" class="fa fa-comments-o" aria-hidden="true"></i></span>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+   
+    <div class="footer">
+        <div class="getsupport">
+
+            <ul class="item1">
+                <h4>Get support</h4>
+                <li><a href="">Help Center</a></li>
+                <li><a href="">Live Chat</a></li>
+                <li><a href="">Check order status</a></li>
+                <li><a href="">Refunds</a></li>
+                <li><a href="">Report abuse</a></li>
+            </ul>
+            <ul class="item2">
+                <h4>Trade Assurance</h4>
+                <li><a href="">Safe and easy payments</a></li>
+                <li><a href="">Money-back policy</a></li>
+                <li><a href="">On-time shipping</a></li>
+                <li><a href="">After-sales protections</a></li>
+                <li><a href="">Product monitoring services</a></li>
+            </ul>
+            <ul class="item1">
+                <h4>Source on Alibaba.com</h4>
+                <li><a href="">Request for Quotation</a></li>
+                <li><a href="">Membership program</a></li>
+                <li><a href="">ChiLinh.com Logistics</a></li>
+                <li><a href="">Sales tax and VAT</a></li>
+                <li><a href="">Alibaba.com Reads</a></li>
+            </ul>
+            <ul class="item1">
+                <h4>Sell on Alibaba.com</h4>
+                <li><a href="">Start selling</a></li>x
+                <li><a href="">Seller Central</a></li>
+                <li><a href="">Become a Verified Supplier</a></li>
+                <li><a href="">Partnerships</a></li>
+                <li><a href="">Download the app for suppliers</a></li>
+            </ul>
+            <ul class="item1">
+                <h4>Get to know us</h4>
+                <li><a href="">About ChiLinh.com</a></li>
+                <li><a href="">Corporate responsibility</a></li>
+                <li><a href="">News center</a></li>
+                <li><a href="">Careers</a></li>
+            </ul>
+
+        </div>
+        <div class="symbol">
+            <ul style="font-size: 40px; margin-top: 9%">
+                <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+              
+              
+            </ul>
+        </div>
+        <div class="download">
+            
+            <a href=""><img style="width:150px;" src="../img/CHplay.png" alt=""></a>
+            <a href=""><img style="width: 150px;" src="../img/apstore.png" alt=""></a>
+        </div>
+    </div>
+   
+</body>
+
+</html>

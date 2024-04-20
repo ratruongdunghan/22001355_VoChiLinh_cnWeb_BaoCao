@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+
+    <script src="../Javascript/jquery-3.6.0.js"></script>
+    <script src="../bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+
+    <title>Document</title>
+    <script src="../Javascript/DKTK.js"></script>
+    <style>
+        .container {
+            background-color: rgb(165, 190, 56);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="text-center">ĐĂNG KÝ </h1>
+        <form action="">
+            <div class="row form-group">
+                <label for="" class="col-md-2 text-right">Tên đăng nhập:</label>
+                <div class="col-md-7">
+                    <input type="text" id="txtTenDN" placeholder="Nhập tên đăng nhập" class="form-control"
+                        onblur="kiemTraTenDN()">
+                    <span class="text-danger" id="errTenDN">*</span>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row form-group">
+                <label for="" class="col-md-2 text-right">Mật khẩu:</label>
+                <div class="col-md-7">
+                    <input type="text" placeholder="Nhập vào mật khẩu" class="form-control" id="txtPW"
+                        onblur=" KTMatKhau()">
+                    <span class="text-danger" id="errPW">*</span>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row form-group">
+                <label for="" class="col-md-2 text-right">Nhập lại mật khẩu:</label>
+                <div class="col-md-7">
+                    <input type="password" placeholder="Xác nhận Mật Khẩu" class="form-control" id="txtlap">
+                    <span class="text-danger" id="errlap">*</span>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row form-group">
+                <label for="" class="col-md-2 text-right">Họ và tên:</label>
+                <div class="col-md-7">
+                    <input type="text" placeholder="Nhập vào họ tên" class="form-control">
+                    <span class="text-danger">*</span>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row form-group">
+                <label for="" class="col-md-2 text-right">Ngày sinh:</label>
+                <div class="col-md-2">
+                    <input type="date" class="form-control">
+                </div>
+            </div>
+            <hr>
+            <div class="row form-group">
+                <label for="" class="col-md-2 text-right">Email:</label>
+                <div class="col-md-7">
+                    <input type="email" placeholder="example@gmail.com"
+                        class="form-control">
+                    <span class="text-danger">*</span>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row form-group">
+                <label for="" class="col-md-2 text-right"></label>
+                <div class="col-md-7">
+                    <input type="button" value="Đăng ký" class="btn btn-dark bg-primary">
+                    <input type="button" value="Hủy" class="btn btn-dark">
+                </div>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.top {
+    
+    background-color: antiquewhite;
+    height: auto;
+    width: 100%;
+    padding: 2%;
+
+}
+
+.icon {
+display: flex;
+
+}
+
+.search {
+    border-radius: 40px;
+    height: 45px;
+    width: 590px;
+    border: 1px solid black;
+}
+
+.search {
+    position: relative;
+    left: 400px;
+    bottom: 57px;
+}
+
+.divider {
+    margin-left: 20px;
+    width: 2px;
+    height: 24px;
+    background-color: #222;
+    position: relative;
+    bottom: 30px;
+    left: 135px;
+}
+
+
+.functional {
+    display: flex;
+   flex-direction: row;
+   padding: 2%;
+   float: right;
+   position: absolute;
+   
+}
+.functional {
+    bottom: 87%;
+    left: 60%;
+}
+
+.sub-header ul li{
+    display: flex;
+    display: inline;
+    float: left;
+    list-style: none;
+}
+.sub-header ul li a{
+    text-decoration: none;
+    color: #222;
+}
+
+.preview {
+  
+    height: 450px;
+    width: 100%;
+    border-bottom: 1px solid;
+  
+}
+
+.preview ul{
+    position: relative;
+    left: 120px;
+    bottom: 300px;
+}
+
+.information .icon {
+    border: 1px solid;
+    height: 20px;
+    width: 160px;
+    background-color: orangered;
+    position: relative;
+    bottom: 580px;
+    left: 35%;
+}
+
+.text {
+position: relative;
+bottom: 578px;
+left: 33%;
+
+
+}
+
+.container_button {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 490px;
+    left: 38%;
+    
+}
+
+.button1 {
+    height: 36px;
+    width: 200px;
+    border-radius: 40px;
+    border: 1px solid orangered;
+    cursor: pointer;
+ 
+ 
+text-align: center;
+}
+.button1:hover {
+    background-color: orangered;
+  
+}
+
+.button2 {
+    cursor: pointer;
+    height: 36px;
+    width: 200px;
+    border-radius: 40px;
+    background-color: orangered;
+    border: 1px solid orangered;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.content2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.product {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 500px;
+    width: 288px;
+    margin-left: 2%;
+}
+
+#describe {
+width: 250px;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 5%;
+margin-top:5% ;
+border: 1px solid black;
+}
+
+.button-contact {
+    cursor: pointer;
+    height: 36px;
+    width: 230px;
+    border-radius:40px ;
+    background-color: orangered;
+    border: 1px solid orangered;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.footer ul li {
+    list-style: none;
+
+}
+
+.footer {
+    height: 400px;
+    width: 100%;
+    background-color: gray;
+   padding: 2%; 
+}
+
+.footer .getsupport {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.footer .getsupport ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer .getsupport ul li a {
+    color: black;
+}
+
+
+.footer .getsupport ul li {
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+.footer .getsupport ul h4 {
+    margin-bottom: 10px; 
+}
+
+.symbol ul li{
+    display: flex;
+    display: inline;
+}
+
+.download {
+    position: relative;
+    left: 800px;
+    bottom: 75px;
+}

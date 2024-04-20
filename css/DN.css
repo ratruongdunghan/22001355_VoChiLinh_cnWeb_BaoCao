@@ -1,0 +1,11 @@
+
+
+.container {
+    margin: 0 auto;
+    width: 300px;
+    height: 200px; 
+    background: linear-gradient(to bottom, #cd6510, #ffffff); 
+    border: 1px solid #beb7b7; 
+    padding: 20px; 
+}
+
