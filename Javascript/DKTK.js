@@ -37,3 +37,24 @@ function KTLai(){
         return true;
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    var btnDangKy = document.getElementById("btnDangKy");
+    
+    btnDangKy.addEventListener("click", function() {
+      
+        var isValidTenDN = kiemTraTenDN();
+        var isValidMatKhau = KTMatKhau();
+        var isValidLai = KTLai();
+        
+  
+        if (isValidTenDN && isValidMatKhau && isValidLai) {
+        
+            alert("Đăng ký thành công!");
+      
+        } else {
+        
+            alert("Vui lòng kiểm tra lại thông tin đăng ký!");
+        }
+    });
+});
