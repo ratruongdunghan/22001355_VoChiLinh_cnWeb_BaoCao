@@ -58,3 +58,29 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    var btnDangKy = document.getElementById("btnDangKy");
+    var btnHuy = document.querySelector('input[value="Hủy"]');
+
+    btnDangKy.addEventListener("click", function() {
+        var isValidTenDN = kiemTraTenDN();
+        var isValidMatKhau = KTMatKhau();
+        var isValidLai = KTLai();
+        var isValidHoTen = KiemTraHoTen();
+
+        if (isValidTenDN && isValidMatKhau && isValidLai && isValidHoTen) {
+            alert("Đăng ký thành công!");
+        } else {
+            alert("Vui lòng kiểm tra lại thông tin đăng ký!");
+        }
+    });
+
+    btnHuy.addEventListener("click", function() {
+     
+        document.getElementById("txtTenDN").value = "";
+        document.getElementById("txtPW").value = "";
+        document.getElementById("txtlap").value = "";
+        document.getElementById("txtHoTen").value="";
+    });
+});
