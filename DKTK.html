@@ -65,7 +65,7 @@
             <div class="row form-group">
                 <label for="" class="col-md-2 text-right">Ngày sinh:</label>
                 <div class="col-md-2">
-                    <input type="date" class="form-control">
+                    <input type="date" class="form-control" id="ns">
                 </div>
             </div>
             <hr>
@@ -73,7 +73,7 @@
                 <label for="" class="col-md-2 text-right">Email:</label>
                 <div class="col-md-7">
                     <input type="email" placeholder="example@gmail.com"
-                        class="form-control">
+                        class="form-control" id="email">
                     <span class="text-danger">*</span>
                 </div>
             </div>
@@ -82,8 +82,9 @@
             <div class="row form-group">
                 <label for="" class="col-md-2 text-right"></label>
                 <div class="col-md-7">
-                    <input type="button" id="btnDangKy" value="Đăng ký" class="btn btn-dark bg-primary">
-                    <input type="button" value="Hủy" class="btn btn-dark">
+                
+                    <input type="button" id="btnDangKy" value="Đăng ký" class="btn btn-dark bg-primary" onclick="checkform()">
+                    <input type="button" value="Hủy" class="btn btn-dark" onclick="deleteform()">
                 </div>
             </div>
         </form>

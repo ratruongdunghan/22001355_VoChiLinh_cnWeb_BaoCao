@@ -38,49 +38,60 @@ function KTLai(){
     }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    var btnDangKy = document.getElementById("btnDangKy");
-    
-    btnDangKy.addEventListener("click", function() {
-      
-        var isValidTenDN = kiemTraTenDN();
-        var isValidMatKhau = KTMatKhau();
-        var isValidLai = KTLai();
-        
-  
-        if (isValidTenDN && isValidMatKhau && isValidLai) {
-        
-            alert("Đăng ký thành công!");
-      
-        } else {
-        
-            alert("Vui lòng kiểm tra lại thông tin đăng ký!");
-        }
-    });
-});
 
-document.addEventListener("DOMContentLoaded", function() {
-    var btnDangKy = document.getElementById("btnDangKy");
-    var btnHuy = document.querySelector('input[value="Hủy"]');
+function checkform() {
+    e.preventDefault();
+    var txtTenDN = document.getElementById("txtTenDN").value;
+    var txtPW = document.getElementById("txtPW").value;
+    var txtlap = document.getElementById("txtlap").value;
+    var txtHoTen = document.getElementById("txtHoTen").value;
+    var ns = document.getElementById("ns").value;
+    var email = document.getElementById("email").value;
 
-    btnDangKy.addEventListener("click", function() {
-        var isValidTenDN = kiemTraTenDN();
-        var isValidMatKhau = KTMatKhau();
-        var isValidLai = KTLai();
-        var isValidHoTen = KiemTraHoTen();
+    var user = {
+        txtTenDN: txtTenDN,
+        txtPW: txtPW,
+        txtlap: txtlap,
+        txtHoTen: txtHoTen,
+        ns: ns,
+        email: email,
+    };
 
-        if (isValidTenDN && isValidMatKhau && isValidLai && isValidHoTen) {
-            alert("Đăng ký thành công!");
-        } else {
-            alert("Vui lòng kiểm tra lại thông tin đăng ký!");
-        }
-    });
+    var json = JSON.stringify(user);
+    localStorage.setItem(txtTenDN, json);
+    alert("Đăng ký thành công!");
+}
 
-    btnHuy.addEventListener("click", function() {
-     
-        document.getElementById("txtTenDN").value = "";
-        document.getElementById("txtPW").value = "";
-        document.getElementById("txtlap").value = "";
-        document.getElementById("txtHoTen").value="";
-    });
-});
+
+
+function checkform() {
+    var user = document.getElementById("txtTenDN");
+    var user = document.getElementById("txtPW");
+    var user = document.getElementById("txtlap");
+    var user = document.getElementById("txtHoTen");
+
+    if (txtTenDN.value != "") {
+
+    } else {
+        alert("Vui lòng điền vào ô đăng nhập!");
+        txtTenDN.focus();
+    }
+
+    if (txtPW.value != "") {
+
+    } else {
+        alert("Vui lòng điền mật khẩu");
+        txtPW.focus();
+
+    }
+
+}
+
+function deleteform() {
+    document.getElementById("txtTenDN").value = "";
+    document.getElementById("txtPW").value = "";
+    document.getElementById("txtlap").value = "";
+    document.getElementById("txtHoTen").value = "";
+    document.getElementById("ns").value = "";
+    document.getElementById("email").value = "";
+}
