@@ -26,21 +26,21 @@ function KTMatKhau(){
     }
 }
 function KTLai(){
-    var pass2 = document.getElementById("txtlap").value
-    var errpass2 = document.getElementById("errlap")
-    var reg_PW = /[A-Za-z0-9_@]{6,}$/
-    if(password.trim()=="" && !reg_PW.test(password)){
-        errPW.innerHTML = "Mật khẩu bắt buộc nhập ít nhất 6 ký tự"
+    var pass2 = document.getElementById("txtlap").value;
+    var errpass2 = document.getElementById("errlap");
+    var reg_PW = /[A-Za-z0-9_@]{6,}$/;
+    if(pass2.trim() === "" || !reg_PW.test(pass2)){
+        errpass2.innerHTML = "Mật khẩu bắt buộc nhập ít nhất 6 ký tự";
         return false;
-    }else{
-        errPW.innerHTML = "*"
+    } else {
+        errpass2.innerHTML = "*";
         return true;
     }
 }
 
 
-function checkform() {
-    e.preventDefault();
+function signup(e) {
+    event.preventDefault();
     var txtTenDN = document.getElementById("txtTenDN").value;
     var txtPW = document.getElementById("txtPW").value;
     var txtlap = document.getElementById("txtlap").value;
@@ -58,7 +58,7 @@ function checkform() {
     };
 
     var json = JSON.stringify(user);
-    localStorage.setItem(txtTenDN, json);
+    localStorage.setItem(user, json);
     alert("Đăng ký thành công!");
 }
 
