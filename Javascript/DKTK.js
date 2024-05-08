@@ -13,30 +13,38 @@ function kiemTraTenDN(){
     errTenDN.innerHTML = "*"
     return true
 }
-function KTMatKhau(){
-    var password = document.getElementById("txtPW").value
-    var errPW = document.getElementById("errPW")
-    var reg_PW = /[A-Za-z0-9_@]{6,}$/
-    if(password.trim()=="" && !reg_PW.test(password)){
-        errPW.innerHTML = "Mật khẩu bắt buộc nhập ít nhất 6 ký tự"
-        return false;
-    }else{
-        errPW.innerHTML = "*"
-        return true;
-    }
-}
-function KTLai(){
+
+function KTMatKhau() {
+    var password = document.getElementById("txtPW").value;
     var pass2 = document.getElementById("txtlap").value;
+    var errPW = document.getElementById("errPW");
     var errpass2 = document.getElementById("errlap");
     var reg_PW = /[A-Za-z0-9_@]{6,}$/;
-    if(pass2.trim() === "" || !reg_PW.test(pass2)){
+
+    if (password.trim() === "" || !reg_PW.test(password)) {
+        errPW.innerHTML = "Mật khẩu bắt buộc nhập ít nhất 6 ký tự";
+        return false;
+    } else {
+        errPW.innerHTML = "*";
+    }
+
+    if (pass2.trim() === "" || !reg_PW.test(pass2)) {
         errpass2.innerHTML = "Mật khẩu bắt buộc nhập ít nhất 6 ký tự";
         return false;
     } else {
         errpass2.innerHTML = "*";
+    }
+
+    if (password !== pass2) {
+        errpass2.innerHTML = "Mật khẩu nhập không khớp";
+        return false;
+    } else {
+        alert("Mật khẩu bạn nhập hợp lệ!");
         return true;
     }
 }
+
+
 
 function signup(e) {
     e.preventDefault(); // Sử dụng e.preventDefault() thay vì event.preventDefault();

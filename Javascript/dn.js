@@ -1,6 +1,6 @@
 function checkform() {
   var user = document.getElementById("email");
-  var user = document.getElementById("phone");
+  var user = document.getElementById("txtPW");
   
  
 
@@ -11,11 +11,11 @@ function checkform() {
       email.focus();
   }
 
-  if (phone.value != "") {
+  if (txtPW.value != "") {
 
   } else {
-      alert("Vui lòng điền số điện thoại!");
-      phone.focus();
+      alert("Vui lòng nhập mật khẩu");
+      txtPW.focus();
 
   }
 
