@@ -38,9 +38,9 @@ function KTLai(){
     }
 }
 
-
 function signup(e) {
-    event.preventDefault();
+    e.preventDefault(); // Sử dụng e.preventDefault() thay vì event.preventDefault();
+
     var txtTenDN = document.getElementById("txtTenDN").value;
     var txtPW = document.getElementById("txtPW").value;
     var txtlap = document.getElementById("txtlap").value;
@@ -58,7 +58,7 @@ function signup(e) {
     };
 
     var json = JSON.stringify(user);
-    localStorage.setItem(user, json);
+    localStorage.setItem(txtTenDN, json); 
     alert("Đăng ký thành công!");
 }
 
@@ -95,3 +95,16 @@ function deleteform() {
     document.getElementById("ns").value = "";
     document.getElementById("email").value = "";
 }
+
+
+document.getElementById("signup").addEventListener("button", function(event) {
+    event.preventDefault();
+    var txtPW = document.getElementById("txtPW").value;
+    var txtlap = document.getElementById("txtlap").value;
+
+    if (txtPW == txtlap) {
+        alert("Đăng ký thành công");
+    } else {
+        document.getElementById("errorText").style.display = "block";
+    }
+});
