@@ -47,7 +47,7 @@ function KTMatKhau() {
 
 
 function signup(e) {
-    e.preventDefault(); // Sử dụng e.preventDefault() thay vì event.preventDefault();
+    e.preventDefault();
 
     var txtTenDN = document.getElementById("txtTenDN").value;
     var txtPW = document.getElementById("txtPW").value;
@@ -65,18 +65,21 @@ function signup(e) {
         email: email,
     };
 
+    // Chuyển đổi đối tượng user thành chuỗi JSON
     var json = JSON.stringify(user);
-    localStorage.setItem(txtTenDN, json); 
+
+    // Lưu vào localStorage với key là txtTenDN
+    localStorage.setItem(txtTenDN, JSON);
+
     alert("Đăng ký thành công!");
 }
 
 
-
-function checkform() {
-    var user = document.getElementById("txtTenDN");
-    var user = document.getElementById("txtPW");
-    var user = document.getElementById("txtlap");
-    var user = document.getElementById("txtHoTen");
+    function checkform() {
+        var user = document.getElementById("txtTenDN");
+        var user = document.getElementById("txtPW");
+        var user = document.getElementById("txtlap");
+        var user = document.getElementById("txtHoTen");
 
     if (txtTenDN.value != "") {
 
